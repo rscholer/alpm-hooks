@@ -1,0 +1,13 @@
+[Trigger]
+Operation = Remove
+Operation = Upgrade
+Type = File
+Target = usr/share/icons/*/
+
+[Action]
+Description = Remove no longer needed icon caches
+When = PostTransaction
+Depends = coreutils
+Depends = bash
+Exec = /bin/bash /etc/pacman.d/hooks/remove-icon-cache.sh
+NeedsTargets
