@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = xf86-video-*
+Target = systemd
+
+[Action]
+Description = Update initcpio images
+When = PostTransaction
+Depends = mkinitcpio
+Exec = /bin/mkinitcpio -P
