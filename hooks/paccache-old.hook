@@ -7,4 +7,4 @@ Target = *
 Description = Remove old packages from cache
 When = PostTransaction
 Depends = pacman
-Exec = /bin/paccache --quiet --remove --keep 2
+Exec = /bin/paccache --quiet --remove --keep 1
