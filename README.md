@@ -12,6 +12,3 @@ Available hooks
     Remove uninstalled packages from cache.
 *   **remove-icon-cache.hook**:
     Remove no longer needed icon caches. Requires a custom script.
-*   **systemd-daemon-reload**:
-    Automatically reload systemd services.
-    Make sure a display manager is excluded!
