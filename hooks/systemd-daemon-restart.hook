@@ -1,0 +1,20 @@
+[Trigger]
+Operation = Upgrade
+Type = File
+Target = usr/lib/systemd/system/*.service
+Target = !usr/lib/systemd/system/lightdm.service
+Target = !usr/lib/systemd/system/gdm.service
+Target = !usr/lib/systemd/system/lxdm.service
+Target = !usr/lib/systemd/system/nodm.service
+Target = !usr/lib/systemd/system/sddm.service
+Target = !usr/lib/systemd/system/slim.service
+Target = !usr/lib/systemd/system/xdm.service
+
+[Action]
+Description = Automatically reload systemd services
+When = PostTransAction
+Depends = coreutils
+Depends = bash
+Depends = systemd
+Exec = /bin/bash /etc/pacman.d/hooks/systemd-daemon-restart.sh
+NeedsTargets
