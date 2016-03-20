@@ -1,6 +1,7 @@
 [Trigger]
 Operation = Upgrade
 Type = Package
+Target = mkinitcpio*
 Target = xf86-video-*
 Target = systemd
 
