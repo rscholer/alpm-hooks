@@ -20,6 +20,7 @@
 # THE SOFTWARE.
 while read -r dir; do
 	if [[ -d "${dir}" ]] && ! pacman -Qo "/${dir}" >/dev/null 2>&1; then
-		rm -r "/${dir}"
+		rm "/${dir}/icon-theme.cache"
+		rmdir "/${dir}"
 	fi
 done
