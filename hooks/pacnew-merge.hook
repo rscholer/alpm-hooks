@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = *
+
+[Action]
+Description = Merge or remove pacnew/pacsave files.
+When = PostTransaction
+Depends = bash
+Depends = pacman
+Depends = vim
+Exec = /bin/bash /etc/pacman.d/hooks/pacnew-merge.sh
