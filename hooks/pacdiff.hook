@@ -1,4 +1,5 @@
 [Trigger]
+Operation = Remove
 Operation = Upgrade
 Type = Package
 Target = *
@@ -9,4 +10,4 @@ When = PostTransaction
 Depends = bash
 Depends = pacman
 Depends = vim
-Exec = /bin/bash /etc/pacman.d/hooks/pacnew-merge.sh
+Exec = /bin/bash /etc/pacman.d/hooks/pacdiff.sh
