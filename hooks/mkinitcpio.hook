@@ -1,6 +1,10 @@
 [Trigger]
 Operation = Upgrade
 Type = Package
+Target = cryptsetup
+Target = device-mapper
+Target = kmod
+Target = lvm2
 Target = mkinitcpio*
 Target = xf86-video-*
 Target = systemd
