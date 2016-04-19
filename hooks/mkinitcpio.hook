@@ -1,6 +1,8 @@
 [Trigger]
 Operation = Upgrade
 Type = Package
+Target = *-firmware
+Target = *-fw
 Target = cryptsetup
 Target = device-mapper
 Target = kmod
