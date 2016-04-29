@@ -7,4 +7,4 @@ Target = *
 Description = Remove uninstalled packages from cache
 When = PostTransaction
 Depends = pacman
-Exec = /bin/paccache --quiet --remove --uninstalled --keep 1
+Exec = /bin/paccache --quiet --remove --uninstalled --keep 0
