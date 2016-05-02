@@ -12,7 +12,7 @@ Target = xf86-video-*
 Target = systemd
 
 [Action]
-Description = Update initcpio images...
+Description = Updating initcpio images...
 When = PostTransaction
 Depends = mkinitcpio
 Exec = /bin/mkinitcpio -P
