@@ -1,15 +1,15 @@
 [Trigger]
+Operation = Install
+Operation = Remove
 Operation = Upgrade
-Type = Package
-Target = *-firmware
-Target = *-fw
-Target = cryptsetup
-Target = device-mapper
-Target = kmod
-Target = lvm2
-Target = mkinitcpio*
-Target = xf86-video-*
-Target = systemd
+Type = File
+Target = boot/vmlinuz-*
+Target = usr/lib/firmware/*
+Target = usr/lib/initcpio/*
+Target = usr/lib/libkmod.so
+Target = usr/lib/modprobe.d/*
+Target = usr/lib/udev/*
+Target = usr/lib/xorg/drivers/*
 
 [Action]
 Description = Updating initcpio images...
