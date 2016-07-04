@@ -1,0 +1,17 @@
+[Trigger]
+Operation = Instal'l
+Operation = Remove
+Operation = Upgrade
+Type = File
+Target = boot/vmlinuz-*
+Target = usr/lib/firmware/*
+Target = usr/lib/initcpio/*
+Target = usr/lib/libkmod.so
+Target = usr/lib/modprobe.d/*
+Target = usr/lib/udev/*
+Target = usr/lib/xorg/drivers/*
+
+[Action]
+Description = Notify i3pystatus about a required restart
+When = PostTransaction
+Exec = /bin/sh -c 'touch /tmp/restart_needed'
