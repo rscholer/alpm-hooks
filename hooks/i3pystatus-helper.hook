@@ -1,5 +1,5 @@
 [Trigger]
-Operation = Instal'l
+Operation = Install
 Operation = Remove
 Operation = Upgrade
 Type = File
