@@ -12,6 +12,6 @@ Target = usr/lib/udev/*
 Target = usr/lib/xorg/drivers/*
 
 [Action]
-Description = Notify i3pystatus about a required restart
+Description = Notify i3pystatus about a required reboot
 When = PostTransaction
-Exec = /bin/sh -c 'touch /tmp/restart_needed'
+Exec = /bin/sh -c 'touch /tmp/reboot_needed'
