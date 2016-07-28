@@ -9,7 +9,7 @@ Target = usr/lib/initcpio/*
 Target = usr/lib/libkmod.so
 Target = usr/lib/modprobe.d/*
 Target = usr/lib/udev/*
-Target = usr/lib/xorg/drivers/*
+Target = usr/lib/xorg/modules/drivers/*
 
 [Action]
 Description = Updating initcpio images...
