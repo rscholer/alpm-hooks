@@ -3,7 +3,7 @@ Operation = Install
 Operation = Remove
 Operation = Upgrade
 Type = File
-Target = boot/vmlinuz-linux
+Target = boot/vmlinuz-linux-lts
 Target = usr/lib/firmware/*
 Target = usr/lib/initcpio/*
 Target = usr/lib/libkmod.so
@@ -12,7 +12,7 @@ Target = usr/lib/udev/*
 Target = usr/lib/xorg/modules/drivers/*
 
 [Action]
-Description = Updating linux initramfs images...
+Description = Updating linux-lts initramfs images...
 When = PostTransaction
 Depends = mkinitcpio
-Exec = /bin/mkinitcpio -p linux
+Exec = /bin/mkinitcpio -p linux-lts
