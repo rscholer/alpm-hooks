@@ -14,5 +14,6 @@ Target = usr/lib/xorg/modules/drivers/*
 [Action]
 Description = Updating linux initramfs images...
 When = PostTransaction
+Depends = linux
 Depends = mkinitcpio
 Exec = /bin/mkinitcpio -p linux
