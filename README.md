@@ -28,5 +28,5 @@ License
 
 [1]: https://www.archlinux.org/
 [2]: https://www.archlinux32.org/
-[3]: https://gitlab.com/rscholer/alpm-hooks/issues
+[3]: https://github.com/rscholer/alpm-hooks/issues
 [4]: LICENSE
